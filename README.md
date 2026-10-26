@@ -36,6 +36,17 @@ language fallback applies. Translations can provide
 core-template customizations and HTML-email modifications do not automatically
 carry over to the extension's template.
 
+## Screenshots
+
+Browser previews of captured test emails with synthetic details. Click an image
+to see it full size; see the [gallery](docs/images/screenshots/README.md).
+
+[<img src="docs/images/screenshots/ipv4.png" alt="IPv4 registration email example" width="640" height="610">](docs/images/screenshots/ipv4.png)
+
+[<img src="docs/images/screenshots/ipv6.png" alt="IPv6 registration email example" width="640" height="610">](docs/images/screenshots/ipv6.png)
+
+[<img src="docs/images/screenshots/missing-ip.png" alt="Missing or invalid IP email example" width="640" height="571">](docs/images/screenshots/missing-ip.png)
+
 ## Development
 
 See [implementation and testing](docs/testing.md). The extension listens to
@@ -48,6 +59,14 @@ The feature was requested in this [phpBB discussion](https://www.phpbb.com/commu
 
 Synthetic [IPv4](samples/admin-activation-ipv4.txt) and
 [IPv6](samples/admin-activation-ipv6.txt) email examples are included. Their example activation keys do not work.
+
+## Contributing
+
+Contributions are welcome!
+
+- **Bug reports**: [Open an issue](https://github.com/phpbbmodders/adminactivationdetails/issues).
+- **Everything else** (questions, feature requests, ideas, general discussion): [Use Discussions](https://github.com/phpbbmodders/adminactivationdetails/discussions).
+- Pull requests are welcome for bug fixes or discussed features.
 
 ## Acknowledgments
 
