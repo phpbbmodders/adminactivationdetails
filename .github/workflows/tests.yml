@@ -1,0 +1,42 @@
+name: Tests
+on:
+    push:
+    pull_request:
+permissions:
+    contents: read
+jobs:
+    tests:
+        runs-on: ubuntu-24.04
+        strategy:
+            fail-fast: false
+            matrix:
+                phpbb: ['3.3.x', 'master']
+                php: ['8.3', '8.4']
+        name: phpBB ${{ matrix.phpbb }} / PHP ${{ matrix.php }}
+        steps:
+            - name: Checkout phpBB
+              uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+              with:
+                  repository: phpbb/phpbb
+                  ref: ${{ matrix.phpbb }}
+            - name: Checkout extension
+              uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+              with:
+                  path: phpBB/ext/phpbbmodders/adminactivationdetails
+            - name: Set up PHP
+              uses: shivammathur/setup-php@d52fc211a0436f8839a587b3b5b8efddab4744ea # v2
+              with:
+                  php-version: ${{ matrix.php }}
+                  extensions: dom, gd, intl, mbstring, mysqli, pdo_sqlite, sqlite3, zip
+                  coverage: none
+            - name: Install phpBB test dependencies
+              run: .github/setup-phpbb.sh none '${{ matrix.php }}' 1
+            - name: Run regression tests
+              run: phpBB/vendor/bin/phpunit --bootstrap tests/bootstrap.php --configuration phpBB/ext/phpbbmodders/adminactivationdetails/phpunit.xml.dist
+            - name: Check extension coding standards
+              run: phpBB/vendor/bin/phpcs -s --standard=build/code_sniffer/ruleset-php-extensions.xml --extensions=php --ignore='*/tests/*' phpBB/ext/phpbbmodders/adminactivationdetails
+    epv:
+        uses: phpbbmodders/.github/.github/workflows/epv.yml@v1
+        with:
+            EXTNAME: phpbbmodders/adminactivationdetails
+            PHPBB_BRANCHES: '["3.3.x", "master"]'

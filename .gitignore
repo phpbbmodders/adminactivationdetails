@@ -1,0 +1,6 @@
+/vendor/
+/composer.lock
+/.phpunit.result.cache
+/tests/runtime/board-33.yml
+/tests/runtime/board-40.yml
+/tests/runtime/__pycache__/

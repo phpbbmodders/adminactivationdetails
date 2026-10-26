@@ -1,0 +1,39 @@
+Subject: Activate user account
+
+Hello,
+
+The account owned by "{USERNAME}" has been deactivated or newly created. Check the account details before deciding whether to activate it.
+
+Username: {USERNAME}
+<!-- IF USER_EMAIL -->
+Email address: {USER_EMAIL}
+<!-- ELSE -->
+Email address: Not available
+<!-- ENDIF -->
+
+<!-- IF USER_IP -->
+Registration IP: {USER_IP}
+<!-- ELSE -->
+Registration IP: Not available
+<!-- ENDIF -->
+
+<!-- IF REG_DATE -->
+Registration date: {REG_DATE} ({REG_TIMEZONE})
+<!-- ELSE -->
+Registration date: Not available
+<!-- ENDIF -->
+
+<!-- IF USER_IP -->
+WHOIS / RDAP lookup:
+{U_WHOIS}
+
+Stop Forum Spam lookup:
+{U_STOPFORUMSPAM}
+<!-- ENDIF -->
+View the user's profile:
+{U_USER_DETAILS}
+
+Activate the account:
+{U_ACTIVATE}
+
+{EMAIL_SIG}

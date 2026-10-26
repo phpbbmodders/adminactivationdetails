@@ -1,0 +1,26 @@
+Subject: Activate user account
+
+Hello,
+
+The account owned by "ExampleApplicant" has been deactivated or newly created. Check the account details before deciding whether to activate it.
+
+Username: ExampleApplicant
+Email address: ExampleApplicant@example.org
+
+Registration IP: 2001:db8::12
+
+Registration date: Mon Oct 26, 2026 3:17 pm (UTC)
+
+WHOIS / RDAP lookup:
+https://search.arin.net/rdap/?query=2001%3Adb8%3A%3A12
+
+Stop Forum Spam lookup:
+https://www.stopforumspam.com/search/?q=2001%3Adb8%3A%3A12
+View the user's profile:
+https://forum.example.org/memberlist.php?mode=viewprofile&u=84
+
+Activate the account:
+https://forum.example.org/ucp.php?mode=activate&u=84&k=EXAMPLE_ACTIVATION_KEY
+
+--
+Thanks, The Management

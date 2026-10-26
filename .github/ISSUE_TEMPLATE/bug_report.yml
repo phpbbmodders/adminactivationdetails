@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem with Admin Activation Details.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the result and what you expected. Remove real email addresses, IPs and activation keys.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: phpBB, PHP and extension versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include whether this was registration or an activation resend, and whether mail was queued.
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error messages and relevant extensions
+      description: Remove credentials and private account details before posting.

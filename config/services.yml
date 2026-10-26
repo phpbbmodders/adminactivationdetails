@@ -1,0 +1,8 @@
+services:
+    phpbbmodders.adminactivationdetails.listener:
+        class: phpbbmodders\adminactivationdetails\event\listener
+        arguments:
+            - '@user_loader'
+            - '@user'
+        tags:
+            - { name: event.listener }
