@@ -1,0 +1,26 @@
+{
+	"name": "phpbbmodders/adminactivationdetails",
+	"type": "phpbb-extension",
+	"description": "Include registration IP, account details and IP lookup links in administrator activation emails.",
+	"homepage": "https://www.phpbbmodders.com/",
+	"version": "1.0.0-dev",
+	"license": "GPL-2.0-only",
+	"authors": [
+		{
+			"name": "phpBB Modders",
+			"homepage": "https://www.phpbbmodders.com/",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=8.3.36",
+		"phpbb/phpbb": ">=3.3.19,<4.1.0@dev",
+		"composer/installers": "^1.0 || ^2.0"
+	},
+	"extra": {
+		"display-name": "Admin Activation Details",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.3.19,<4.1.0@dev"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+# Copy to an ignored local YAML file and set the source/root paths.
+board:
+  root: /tmp/adminactivationdetails-40
+  phpbb_branch: 'master'
+  server_name: localhost
+  server_port: '8121'
+  nginx_site: /etc/nginx/sites-available/phpbb-adminactivationdetails-40-test.conf
+  seeds: []
+styles: {}
+extensions:
+  adminactivationdetails:
+    source: /path/to/adminactivationdetails
