@@ -16,5 +16,5 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ADMINACTIVATIONDETAILS_NOT_ENABLEABLE' => 'Admin Activation Details requires phpBB 3.3.19 or phpBB 4.0, and PHP 8.3.36 or later.',
+	'ADMINACTIVATIONDETAILS_NOT_ENABLEABLE' => 'Admin Activation Details requires phpBB 3.3.19 or phpBB 4.0, and PHP 8.1 or later.',
 ));

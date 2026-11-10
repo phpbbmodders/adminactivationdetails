@@ -4,7 +4,7 @@ Adds the registering account's email address, stored registration IP and
 registration date to phpBB's administrator activation emails. Valid IPv4
 and IPv6 addresses include WHOIS/RDAP and Stop Forum Spam lookup links.
 
-Requires phpBB 3.3.19 or phpBB 4.0 and PHP 8.3.36 or later. phpBB 4.0 is
+Requires phpBB 3.3.19 or phpBB 4.0 and PHP 8.1 or later. phpBB 4.0 is
 still a development branch; see [testing](docs/testing.md) for tested revisions.
 
 ## Installation
